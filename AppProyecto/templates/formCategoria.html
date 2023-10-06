@@ -1,0 +1,16 @@
+{% extends 'principal.html' %}
+
+
+{% block contenidoQueCambia1 %}
+    
+    <h1 class="text-center">Formulario de registro de categorias</h1>
+    <form class= "container my-3" action="{% url 'formularioCategoria' %}" method="post"> {% csrf_token %}
+        <div class="form-group">
+          <label>Categoria</label>
+          <input type="text" class="form-control" name="nombre" placeholder="Ingrese el nombre de la categoria">
+        </div>
+        <button type="submit" class="btn btn-secondary my-2">Enviar</button>
+      </form>
+
+
+{% endblock contenidoQueCambia1 %}

@@ -1,0 +1,23 @@
+{% extends 'principal.html' %}
+
+{% load static %}
+
+
+{% block contenidoQueCambia3 %}
+<section class="class="container my-4"">
+    <h2 class="text-center display-3 pt-1 my-4">Proba nuestros sabores</h2>
+    <hr />
+    <article class="row justify-content-center">
+      <div class="col-12 col-md-4 col-lg-4 mb-3">
+        <img src="{% static 'assets/img/dulce.png' %}" alt="pan dulce" class="w-100" />
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 mb-3">
+        <img src="{% static 'assets/img/salado.png' %}" alt="sandwichs salados" class="w-100" />
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 mb-3">
+        <img src="{% static 'assets/img/panyfactura.png' %}" alt="pan y facturas" class="w-100" />
+      </div>
+    </article>
+  </section>
+{% endblock contenidoQueCambia3 %}
+    

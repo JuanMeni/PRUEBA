@@ -1,0 +1,14 @@
+{% extends 'principal.html' %}
+
+
+{% block contenidoQueCambia1 %}
+    
+    <ul>
+        {% for producto in productos  %}
+            <li>{{producto.nombre}} - {{producto.precio}}</li>
+            
+        {% endfor %}
+        
+    </ul>
+
+{% endblock contenidoQueCambia1 %}

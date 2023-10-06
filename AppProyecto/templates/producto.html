@@ -1,0 +1,139 @@
+{% extends 'principal.html' %}
+    
+{% load static %}
+
+
+{% block contenidoQueCambia2 %}
+<main>
+    <section class="container my-5">
+      <h1 class="display-1">Galeria de productos</h1>
+      <hr />
+      <article class="row">
+        <div class="col-12 col-md-4 col-lg-3 my-3">
+          <div class="card">
+            <img
+              src="{% static 'assets/img/productos/Torta-de-chocolate_00098_portfolio.jpg' %}"
+              class="card-img-top"
+              alt="torta de chocolate"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Tarta de chocolate <span class="badge bg-warning">NUEVO</span>
+              </h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+            <div class="card-footer">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalDetalleProducto"
+              >
+                ver detalle
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 my-3">
+          <div class="card">
+            <img
+              src="{% static 'assets/img/productos/Croissant_00018_portfolio1.jpg' %}"
+              class="card-img-top"
+              alt="Medialuna"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Medialuna</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary disabled">ver detalle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 my-3">
+          <div class="card">
+            <img
+              src="{% static 'assets/img/productos/pan.jpg' %}"
+              class="card-img-top"
+              alt="pan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pan con parmesano</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary disabled" data-bs-toggle="modal" data-bs-target="modalDetalleProductoPan">ver detalle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 my-3">
+          <div class="card">
+            <img
+              src="{% static 'assets\img\productos\Paris-Brest_00140_portfolio.jpg' %}"
+              class="card-img-top"
+              alt="torta de chocolate"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paris Brest</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary disabled">ver detalle</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- ventana modal detalle producto -->
+  <div
+    class="modal fade"
+    id="modalDetalleProducto"
+    tabindex="-1"
+    aria-labelledby="modal de producto"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Tarta de chocolate</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <img
+          src="{% static 'assets/img/productos/Torta-de-chocolate_00098_portfolio.jpg' %}"
+            alt="" class="w-100 mb-3"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem est
+            non ipsam eaque voluptate distinctio iusto aliquam numquam ab
+            ratione!
+          </p>
+          <p>Precio: $200</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock contenidoQueCambia2 %}
+    

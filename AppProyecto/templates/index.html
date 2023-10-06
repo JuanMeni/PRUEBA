@@ -1,0 +1,143 @@
+{% extends 'principal.html' %}
+
+{% load static %}
+
+
+{% block contenidoQueCambia1 %}
+<section>
+    <div
+      id="bannerPanaderia"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#bannerPanaderia"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#bannerPanaderia"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#bannerPanaderia"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="{% static 'assets/img/slider_201603_lemonpie.jpg' %}"
+            class="d-block w-100 imgSlider"
+            alt="lemon pie"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{% static 'assets/img/slider_201603_painchoco.jpg' %}"
+            class="d-block w-100 imgSlider"
+            alt="chocolate"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{% static 'assets/img/slider_201603_sandwich.jpg' %}"
+            class="d-block w-100 imgSlider"
+            alt="sandwich"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#bannerPanaderia"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#bannerPanaderia"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+{% endblock contenidoQueCambia1 %}
+    
+
+{% block contenidoQueCambia2 %}
+<section class="class="container my-4"">
+    <h1 class="display-1 text-center">Nuestros Servicios</h1>
+    <hr />
+    <div class="row">
+      <div class="col-12 col-md-4 my-3">
+        <div class="card shadow">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-thumbs-up fa-4x text-primary"></i>
+            <h5 class="card-title mt-3">Atenci&oacute;n al cliente</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make
+              up the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 my-3">
+        <div class="card shadow">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-thumbs-up fa-4x text-primary"></i>
+            <h5 class="card-title mt-3">Atenci&oacute;n al cliente</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make
+              up the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 my-3">
+        <div class="card shadow">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-thumbs-up fa-4x text-primary"></i>
+            <h5 class="card-title mt-3">Atenci&oacute;n al cliente</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make
+              up the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock contenidoQueCambia2 %}
+
+{% block contenidoQueCambia3 %}
+<section class="class="container my-4"">
+    <h2 class="text-center display-3 pt-1 my-4">Proba nuestros sabores</h2>
+    <hr />
+    <article class="row justify-content-center">
+      <div class="col-12 col-md-4 col-lg-4 mb-3">
+        <img src="{% static 'assets/img/dulce.png' %}" alt="pan dulce" class="w-100" />
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 mb-3">
+        <img src="{% static 'assets/img/salado.png' %}" alt="sandwichs salados" class="w-100" />
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 mb-3">
+        <img src="{% static 'assets/img/panyfactura.png' %}" alt="pan y facturas" class="w-100" />
+      </div>
+    </article>
+  </section>
+{% endblock contenidoQueCambia3 %}
+    

@@ -1,0 +1,40 @@
+ {% load static %}
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'assets/img/cocu_logo-450.png' %}" alt="Mi Imagen" height="80">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarMenu"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'producto' %}">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'categoria' %}">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'cliente' %}">Clientes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
